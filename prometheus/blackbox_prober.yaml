@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: blackbox-prober
-  namespace: prow-monitoring
+  namespace: falco
   labels:
     app: blackbox-prober
 spec:
@@ -32,7 +32,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: blackbox-prober-config
-  namespace: prow-monitoring
+  namespace: falco
   labels:
     app: blackbox-prober
 data:
@@ -53,7 +53,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: blackbox-prober
-  namespace: prow-monitoring
+  namespace: falco
   labels:
     app: blackbox-prober
 spec:

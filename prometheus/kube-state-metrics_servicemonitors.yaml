@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/version: 1.9.7
     app: kube-state-metrics
   name: kube-state-metrics
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token

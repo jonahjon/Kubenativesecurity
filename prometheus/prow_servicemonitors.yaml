@@ -7,7 +7,7 @@ metadata:
   labels:
     app: prometheus
   name: prometheus
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -15,7 +15,7 @@ spec:
     scheme: http
   namespaceSelector:
     matchNames:
-    - prow-monitoring
+    - falco
   selector:
     matchLabels:
       app: prometheus
@@ -26,7 +26,7 @@ metadata:
   labels:
     app: alertmanager
   name: alertmanager
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -34,7 +34,7 @@ spec:
     scheme: http
   namespaceSelector:
     matchNames:
-    - prow-monitoring
+    - falco
   selector:
     matchLabels:
       app: alertmanager
@@ -45,7 +45,7 @@ metadata:
   labels:
     app: grafana
   name: grafana
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -53,7 +53,7 @@ spec:
     scheme: http
   namespaceSelector:
     matchNames:
-    - prow-monitoring
+    - falco
   selector:
     matchLabels:
       app: grafana
@@ -64,7 +64,7 @@ metadata:
   labels:
     app: deck
   name: deck
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -83,7 +83,7 @@ metadata:
   labels:
     app: ghproxy
   name: ghproxy
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -102,7 +102,7 @@ metadata:
   labels:
     app: hook
   name: hook
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -121,7 +121,7 @@ metadata:
   labels:
     app: plank
   name: plank
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -140,7 +140,7 @@ metadata:
   labels:
     app: sinker
   name: sinker
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -159,7 +159,7 @@ metadata:
   labels:
     app: tide
   name: tide
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -178,7 +178,7 @@ metadata:
   labels:
     app: horologium
   name: horologium
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s
@@ -197,7 +197,7 @@ metadata:
   labels:
     app: crier
   name: crier
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   endpoints:
   - interval: 30s

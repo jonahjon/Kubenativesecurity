@@ -2,7 +2,7 @@ apiVersion: monitoring.coreos.com/v1
 kind: Prometheus
 metadata:
   name: prow
-  namespace: prow-monitoring
+  namespace: falco
 spec:
   replicas: 2
   storage:
@@ -20,7 +20,7 @@ spec:
   serviceAccountName: prometheus-prow
   alerting:
     alertmanagers:
-    - namespace: prow-monitoring
+    - namespace: falco
       name: alertmanager
       port: http
   enableAdminAPI: false

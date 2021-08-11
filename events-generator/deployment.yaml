@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: falco-event-generator-deployment
-  namespace: prow-monitoring
+  namespace: falco
   labels:
     app: falco-event-generator
 spec:
